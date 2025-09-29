@@ -23,8 +23,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>    
-    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
 
     <!-- Scripts -->
@@ -32,7 +32,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white py-2 nav-underline fixed-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-white py-3 nav-underline fixed-top">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="{{ url('/') }}">
                     <img src="{{ asset('storage/img/asset/logo-2.png') }}" class="img-fluid" width="120"  alt="">
@@ -65,11 +65,11 @@
                             @endphp
                             @if (Auth::user()->akses == 1)
                                 <li class="nav-item py-1  pe-2 d-flex align-items-center">
-                                    
+
                                     <a id="navbarDropdown" class="nav-link py-0 px-0 {{ Request::is('MyProfile','MyProfile/*') ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                         {{ Auth::user()->name }}
                                     </a>
-    
+
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item"href="/Admin">Admin Page</a>
                                         <a class="dropdown-item" href="{{ route('logout') }}"
@@ -77,7 +77,7 @@
                                                         document.getElementById('logout-form').submit();">
                                             {{ __('Logout') }}
                                         </a>
-    
+
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                             @csrf
                                         </form>
@@ -86,11 +86,11 @@
                             @else
                             <div class="d-flex px-2">
                                 <li class="nav-item py-1  pe-2 d-flex align-items-center">
-                                    
+
                                     <a id="navbarDropdown" class="nav-link py-0 px-0 {{ Request::is('MyProfile','MyProfile/*') ? 'active' : '' }}" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                         {{ Auth::user()->name }}
                                     </a>
-    
+
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="/MyProfile">
                                             My Profile
@@ -100,7 +100,7 @@
                                                         document.getElementById('logout-form').submit();">
                                             {{ __('Logout') }}
                                         </a>
-    
+
                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                             @csrf
                                         </form>
@@ -149,7 +149,7 @@
                         dots: true
                     }
                 },
-                
+
                 // You can unslick at a given breakpoint now by adding:
                 // settings: "unslick"
                 // instead of a settings object
@@ -158,7 +158,7 @@
         });
 
 
-        
+
     </script>
     <script>
         const ctx = document.getElementById('myChart').getContext('2d');
@@ -207,11 +207,11 @@
                 }
             }
         };
-    
+
         new Chart(ctx, config);
     </script>
-    
-      
+
+
 </body>
 
 </html>

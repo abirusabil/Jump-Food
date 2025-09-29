@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
+<div class="container my-5 w-75 d-flex align-items-center">
+    <div class="row ">
         <div class="col-md-5 ms-lg-4 mt-2">
             <div class="row my-4">
                 <div class="col">
@@ -16,7 +16,7 @@
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                             <div class="form-group">
-                                <input id="email" placeholder="Email" type="email" class="form-control rounded-pill @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                                <input id="email" placeholder="Email" type="email" class="form-control rounded-pill @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -43,7 +43,7 @@
                             </div>
                     </form>
                 </div>
-            </div>  
+            </div>
         </div>
         <div class="col p-5 align-self-center">
             <i class="fa-solid fa-quote-left"></i>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container py-5 w-75">
     <div class="row ">
         <div class="col-md-5 ms-lg-4">
             <div class="row my-4">
@@ -33,7 +33,7 @@
                             </div>
                             <div class="form-group">
                                 <input id="password" placeholder="Password" type="password" class="form-control rounded-pill @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-        
+
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -55,7 +55,7 @@
                             </div>
                     </form>
                 </div>
-            </div>  
+            </div>
         </div>
         <div class="col p-5 align-self-center">
             <i class="fa-solid fa-quote-left"></i>

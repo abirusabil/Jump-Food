@@ -2,17 +2,14 @@
 
 @section('content')
 <div class="container me-0 ps-lg-0  ">
-    <div class="row phy-5">
+    <div class="row py-5">
         <div class="col-lg-5 align-self-center ps-lg-0 justify-content-center align-items-center px-3 px-lg-0" >
             <p class="bg-body-secondary w-75 rounded-pill text-black "><span class="bg-success px-4 text-white rounded-pill me-2 py-1">New</span >Smartband feature updated</p>
             <h1 class="mt-lg-5 mt-4 "><b>Choose Your Food.</b></h1>
             <h3 class="mb-lg-5 mb-4 header-3 fw-lighter">Be Healthy Be Happy</h3>
-            <div class="d-flex">
-                <div style="width: 33px; height: 33px; background: #009432; border-radius: 7px">
-                    <div style="width: 100%; height: 100%; position: relative">
-                        <div style="width: 32px; height: 32px; left: 0px; top: 0px; position: absolute; background: #009432; border-radius: 7px"></div>
-                        <div style="width: 14px; height: 14px; left: 9px; top: 9px; position: absolute; background: #CCDFFF; border-radius: 9999px"></div>
-                    </div>
+            <div class="d-flex ">
+                <div class="d-flex justify-content-center align-items-center text-center" style="width: 40px; height: 40px;background: #009432; border-radius: 7px">
+                     <div style="width: 20px; height: 20px; background: #CCDFFF; border-radius: 9999px"></div>
                 </div>
                 <div class="ms-2">
                     <h5 class="mb-0 fw-bold">Free consultation</h5>
@@ -37,21 +34,21 @@
     </div>
 </div>
 <section class="background-1">
-    <div class="container my-5 py-5">
-        <div class="row">
-            <div class="col-lg d-flex justify-content-lg-end justify-content-center mb-3  me-1 me-lg-3">
-                <img class="TN-3 rounded-4" src="{{ asset('storage/img/asset/1705931456_Caesar salad with chicken fillet.jpg') }}" >
+    <div class="container w-75 py-5">
+        <div class="row my-5">
+            <div class="col-lg  me-5">
+                <img class="img-fluid w-100 rounded-4" style="height: 300px;" src="{{ asset('storage/img/asset/1705931456_Caesar salad with chicken fillet.jpg') }}" >
             </div>
-            <div class="col-lg ms-lg-4 ">
-                <h4 class="text-white fw-bold w-75">
+            <div class="col-lg">
+                <h4 class="text-white fw-bold lh-sm">
                     Elevate Your Dining Experience with Jump-Food Catering !
                 </h4>
-                <p class="text-white  mt-4  w-75" style="text-align: justify;">
+                <p class="text-white mt-4 lh-base " style="text-align: justify;">
                     Welcome to Jump-Food Catering, where culinary innovation meets convenience. Explore a world of healthy and delectable menus tailored to your taste buds. Our user-friendly website ensures a seamless ordering experience, from personalized consultations to nutritional insights. Immerse yourself in a culinary journey that goes beyond delicious meals. With a mission to combat child stunting, every order contributes to meaningful social impact. Join us in creating memorable moments and making a difference Ready to savor the extraordinary? Dive into Jump-Food Catering and redefine your dining adventure!
                 </p>
             </div>
         </div>
-        <div class="row mt-3 mx-lg-5 px-lg-5">
+        <div class="row">
             <div class="col-lg">
                 <div class="d-flex justify-content-center align-items-center w-100 text-center" >
                     <div class="rounded-circle bg-white d-flex justify-content-center align-items-center" style="width: 100px; height: 100px;">

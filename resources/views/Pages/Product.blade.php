@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container pb-5">
+<div class="container mt-4 mb-5">
     <h5 class="fw-bold text-capitalize mb-0">our product</h5>
     <p >Choose a food package to your needs</p>
-    <div class="row mx-4 mt-4 ">
+    <div class="row mx-4 mt-5">
         <div class="col px-4 d mx-auto">
             <div class="container product">
                 <img src="{{ asset('storage/img/asset/1705809878_Caprese Wrap with Chicken.JPG') }}" class="img-thumbnail img-product border-0 rounded-4 mx-auto d-block shadow mb-1 p-0  bg-body-tertiary rounded" style="height: 320px ; width:320px ;">
@@ -83,11 +83,11 @@
                 <p class="text-center text-white mb-5">Special offers just for you</p>
             </div>
         </div>
-        <div class="row mx-5 px-4 mt-3">
+        <div class="row w-75 d-flex justify-content-center mx-auto">
             @foreach ($Prices as $Price)
                 <div class="col ">
                     <div class="container product">
-                        <div class="card bg-transparent border   border-3 rounded-4  border-white" style="width: 190px ;height:190px;" >
+                        <div class="card bg-transparent border   border-3 rounded-4  border-white" >
                             <div class="card-body text-white ">
                             <h6 class="text-center fw-semibold" style="height:25px; ">{{ $Price->Title }}</h6>
                             <p class="mb-0">Rp.</p>

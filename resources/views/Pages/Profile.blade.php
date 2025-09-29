@@ -20,7 +20,7 @@
                             </div>
                             <div class="col d-flex">
                                 <h6 class="fw-medium">:</h6>
-                                <p class="ms-2 mb-1">{{ $Profile->FullName ?? '-' }}</p>
+                                <p class="ms-2 mb-1">{{ $Profile->PhoneNumber ?? '-' }}</p>
                             </div>
                         </div>
                         <div class="row py-0">
@@ -124,8 +124,8 @@
                                 </div>
                                 </div>
                         @endif
-                        
-                        
+
+
                         <div class="">
                             <hr class="border border-dark w-100 mb-0">
                         </div>
@@ -150,7 +150,7 @@
     </div>
 </div>
 <section class="background-1">
-    <div class="container py-lg-5 py-4 "> 
+    <div class="container py-lg-5 py-4 ">
         <div class="row px-lg-5 px-3 mb-lg-3">
             <div class="col">
                 <h5 class="fw-bold text-center text-white">
@@ -186,7 +186,7 @@
                         <div class="col mt-5 text-white middle-product-text3">
                             <p>{{ $FoodSchedules->MenuSunday->FoodName3 ?? '-' }}</p>
                         </div>
-                        
+
                         <div class="middle-product-2 ">
                             <a href="{{ route('EditMenu',['FoodScheduleId'=>$FoodSchedules->id,'Day'=>'Sunday']) }}" class=" btn px-lg-5 py-1 btn-light text-success btn-overlay rounded-pill w-lg-75 text-center">
                                 Edit
@@ -353,13 +353,13 @@
                         <p class="text-center text-white mt-1">Saturday</p>
                     </div>
                     {{-- End Saturday --}}
-                    
-                        
+
+
                 </div>
                 @endif
             </div>
         </div>
-        
+
     </div>
 </section>
 <div class="container py-5">
@@ -375,7 +375,7 @@
         </div>
     </div>
 </div>
-<div class="container py-5">    
+<div class="container py-5">
     <div class="row">
         <div class="col-lg mx-auto align-self-center">
             <p class="mb-0">
@@ -397,7 +397,7 @@
                                 <span class="percentage"><p class="mb-0" style="font-size: 8px !important;">Quality</p> <h5 class="fw-semibold">61.22 %</h5></span>
                             </div>
                         </div>
-                    </div>                  
+                    </div>
                 </div>
             </div>
             <div class="card mt-4">
@@ -415,8 +415,8 @@
                             <p style="font-size: 8px !important;">Burned</p>
                         </div>
                     </div>
-                    
-                    
+
+
                 </div>
             </div>
         </div>
@@ -465,6 +465,6 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
 
-  
+
 @endsection
 
